@@ -22,6 +22,11 @@ export default function Home() {
             </div>
           </div>
         </div>
+        <div className="bg-lime-400 h-4/5 opacity-0">
+        </div>
+        <div className="z-20 relative bg-white h-1/4">
+        ola amiguito,tudo bem colega?
+        </div>
       </div>
     </main >
   );
