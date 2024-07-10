@@ -44,8 +44,8 @@ export default function Home() {
         <div className="flex items-end justify-center z-20 pt-2 pb-2">
           <div className="grid grid-cols-2 w-1/2">
             {icons_barber.map((icofn, index) => (
-              <div>
-                <Image key={index} src={icofn.local} alt={icofn.nome} width={100} height={100} />
+              <div key={index}>
+                <Image src={icofn.local} alt={icofn.nome} width={100} height={100} />
               </div>
             ))}
           </div >
