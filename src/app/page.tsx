@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import Mheader from "./components/header/page";
+import Galeria from "./components/galeria de fotos/page";
 
 export default function Home() {
 
@@ -30,7 +31,7 @@ export default function Home() {
   return (
     <main className="w-screen h-full bg-slate-600">
       <Mheader />
-      <div className="mx-auto max-w-screen-lg bg-red-500">
+      <div className="inicio/apresentação mx-auto max-w-screen-lg bg-red-500">
         <div className="p-4 flex mx-auto">
           <div className="bg-lime-400 w-1/3 h-[400px]">
             logo
@@ -40,7 +41,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="mx-auto max-w-screen-lg h-[500px] bg-yellow-300">
+      <div className="serviços mx-auto max-w-screen-lg h-[500px] bg-yellow-300">
         <div className="p-4 flex items-end">
           <div className="w-full h-[470px] bg-amber-600">
             alguma foto
@@ -49,6 +50,22 @@ export default function Home() {
             icons e descrição
           </div>
         </div>
+      </div>
+      <div className="tabela de preços mx-auto max-w-screen-lg h-[500px] bg-emerald-500">
+        <div className="p-4 flex items-center">
+          <div className="w-1/5 h-[470px] bg-red-600">
+            efeito paralax, pole barber
+          </div>
+          <div className="w-3/5 h-[400px] bg-fuchsia-600">
+            tabela de preços
+          </div>
+          <div className="w-1/5 h-[450px] bg-red-600">
+            efeito paralax, pole barber
+          </div>
+        </div>
+      </div>
+      <div className="galeria mx-auto max-w-screen-lg h-[500px] bg-sky-400">
+        <Galeria />
       </div>
     </main >
   );
