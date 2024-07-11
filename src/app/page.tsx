@@ -28,28 +28,26 @@ export default function Home() {
   ]
 
   return (
-    <main className="max-w-screen-lg h-screen relative">
-      <div className="w-full h-full bg-[url('/images/banner1.jpg')] bg-no-repeat bg-center bg-cover sm:bg-center">
-        <Mheader />
-      </div>
-      <div>
-        <div className="w-2/5 h-screen bg-black flex justify-end items-center absolute top-14 -left-14 m-1 p-2 sm:justify-center sm:p-0 sm:m-0">
-          <div className="-rotate-[18deg]">
-            <Image src={'/images/logo2.png'} alt="logo" width={270} height={270} className="rounded-full w-36 h-36 sm:w-52 sm:h-52" />
+    <main className="w-screen h-full bg-slate-600">
+      <Mheader />
+      <div className="mx-auto max-w-screen-lg bg-red-500">
+        <div className="p-4 flex mx-auto">
+          <div className="bg-lime-400 w-1/3 h-[400px]">
+            logo
+          </div>
+          <div className="bg-blue-400 w-full h-[400px]">
+            background
           </div>
         </div>
       </div>
-      {/* <div className="bg-lime-400 h-4/5" /> */}
-      <div className="z-20 relative bg-white">
-        <div className="flex items-end justify-center z-20 pt-2 pb-2">
-          <div className="grid grid-cols-2 w-1/2">
-            {icons_barber.map((icofn, index) => (
-              <div key={index}>
-                <Image src={icofn.local} alt={icofn.nome} width={100} height={100} />
-              </div>
-            ))}
-          </div >
-          <div className="bg-lime-400 w-72 h-[32rem]" />
+      <div className="mx-auto max-w-screen-lg h-[500px] bg-yellow-300">
+        <div className="p-4 flex items-end">
+          <div className="w-full h-[470px] bg-amber-600">
+            alguma foto
+          </div>
+          <div className="w-1/2 h-64 bg-pink-400">
+            icons e descrição
+          </div>
         </div>
       </div>
     </main >

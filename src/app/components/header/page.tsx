@@ -3,17 +3,19 @@ import Link from "next/link";
 
 export default function Mheader() {
     return (
-        <>
-            <div className="z-50 relative">
-                <header className="w-screen h-32 text-xl text-black bg-white flex justify-around items-center">
+        <header className="w-screen h-32 bg-white">
+            <div className="mx-auto max-w-screen-lg">
+                <div className="flex justify-between items-center">
                     <Link href="#"><Image src={'/images/logo2.png'} alt="logo" width={120} height={120} className="rounded-full" /></Link>
-                    <nav className="flex justify-end">
-                        <Link href="#" className="mx-2 sm:mx-8">Serviços</Link>
-                        <Link href="#" className="mx-2 sm:mx-8">Galeria</Link>
-                        <Link href="#" className="mx-2 sm:mx-8">Institucional</Link>
-                    </nav>
-                </header>
+                    <div className="text-xl font-medium text-black">
+                        <nav className="">
+                            <Link href="#" className="mx-2 hover:text-yellow-400 sm:mx-8">Serviços</Link>
+                            <Link href="#" className="mx-2 hover:text-yellow-400 sm:mx-8">Galeria</Link>
+                            <Link href="#" className="mx-2 hover:text-yellow-400 sm:mx-8">Institucional</Link>
+                        </nav>
+                    </div>
+                </div>
             </div>
-        </>
+        </header>
     )
 }
