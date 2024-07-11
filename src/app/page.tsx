@@ -30,7 +30,6 @@ export default function Home() {
 
   return (
     <main className="w-screen h-full bg-slate-600">
-      <Mheader />
       <div className="inicio/apresentação mx-auto max-w-screen-lg bg-red-500">
         <div className="p-4 flex mx-auto">
           <div className="bg-lime-400 w-1/3 h-[400px]">
@@ -64,8 +63,21 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="galeria mx-auto max-w-screen-lg h-[500px] bg-sky-400">
+      <div className="galeria mx-auto max-w-screen-lg h-[500px]">
         <Galeria />
+      </div>
+      <div className="sobre nós mx-auto max-w-screen-lg h-[500px] bg-sky-400">
+        <div className="flex">
+          <div className="bg-yellow-950 w-1/2 h-[450px]">
+            logo
+          </div>
+          <div className="bg-zinc-400 w-1/2 h-[450px]">
+            sobre
+            <div className="bg-lime-500 h-2/5">
+              maps
+            </div>
+          </div>
+        </div>
       </div>
     </main >
   );
