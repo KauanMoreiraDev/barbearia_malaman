@@ -5,7 +5,7 @@ export default function Footer() {
                 <div>Todos os direitos reservados</div>
                 <div>
                     2024
-                    <span>Desenvolvido por Kdev</span>
+                    <span className="ml-1">Desenvolvido por Kdev</span>
                 </div>
             </div>
         </footer>
