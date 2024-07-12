@@ -36,7 +36,7 @@ export default function Home() {
             <Image src={'/images/barber-pole.png'} alt="pole-barber" width={450} height={450} />
           </div>
           <div className="w-3/5 h-[400px] bg-slate-300">
-            <div className="flex justify-center item">
+            <div className="flex justify-center items-center">
               <Prices/>
             </div>
           </div>
