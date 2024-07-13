@@ -15,14 +15,14 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className="serviços bg-yellow-200">
-          <div className="mx-auto max-w-screen-lg h-full bg-yellow-200">
+        <div className="serviços bg-yellow-100">
+          <div className="mx-auto max-w-screen-lg h-full bg-yellow-100">
             <div className="flex items-end">
               <div className="w-2/5 h-5/6">
                 <Image src={'/images/detalhe.jpg'} alt="imagem" width={200} height={400} className="w-full h-full pr-4" />
               </div>
               <div className="w-3/5 h-full bg-red-200">
-                <div className="flex flex-col justify-between h-full">
+                <div className="flex flex-col h-full">
                   <div className="font-semibold text-center text-3xl">Somos referência na Cidade</div>
                   <Serviços />
                 </div>
@@ -30,42 +30,46 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className="tabela de preços mx-auto max-w-screen-lg h-[500px] bg-slate-200">
-          <div className="p-4 flex justify-center">
+        <div className="tabela de preços bg-[url('/images/barber-tool.jpg')] bg-cover bg-no-repeat bg-center">
+        <div className="mx-auto max-w-screen-lg h-full">
+          <div className="p-4 flex justify-center items-center">
             <div className="">
               <div className="w-full h-full">
-                <Image src={'/images/barber-pole.png'} alt="pole-barber" width={1000} height={1000} className="w-full h-full" />
+                <Image src={'/images/barber-pole.png'} alt="pole-barber" width={1000} height={1000} className="w-full h-full -rotate-12" />
               </div>
             </div>
-            <div className="w-3/5 h-[400px] bg-slate-300">
-              <div className="flex justify-center items-center">
+            <div className="w-full h-full ">
+              <div className="flex justify-center">
                 <Prices />
               </div>
             </div>
             <div className="">
               <div className="w-full h-full">
-                <Image src={'/images/barber-pole.png'} alt="pole-barber" width={1000} height={1000} className="w-full h-full" />
+                <Image src={'/images/barber-pole.png'} alt="pole-barber" width={1000} height={1000} className="w-full h-full rotate-12" />
+                </div>
               </div>
             </div>
           </div>
         </div>
-        <div className="bg-yellow-200">
-          <div className="galeria mx-auto max-w-screen-lg h-[500px]">
+        <div className="galeria bg-yellow-100">
+          <div className="mx-auto max-w-screen-lg h-screen">
             <Galeria />
           </div>
         </div>
-        <div className="sobre nós mx-auto max-w-screen-lg h-[500px] bg-slate-200">
-          <div className="flex">
-            <div className="w-1/2 h-full">
-              <div className="flex justify-center items-center">
-                <Image src={'/images/logo2.png'} alt="logo" width={200} height={200} className="w-5/6 h-5/6" />
+        <div className="sobre nós bg-yellow-100">
+          <div className="mx-auto max-w-screen-lg h-full">
+            <div className="flex justify-center">
+              <div className="w-full h-full">
+                <div className="flex justify-start">
+                  <Image src={'/images/logo.png'} alt="logo" width={1000} height={1000} className="w-full h-full" />
+                </div>
               </div>
-            </div>
-            <div className="w-1/2 h-[450px]">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic soluta, praesentium neque minima quaerat ab ratione eum? Rem fugiat aspernatur qui, maiores alias omnis repellendus laboriosam consequuntur ipsum, incidunt voluptatibus.
-              Praesentium optio dolore ipsa, voluptatum error iure adipisci incidunt quo alias voluptates, dolores odit corrupti nesciunt provident, aperiam sapiente. Nesciunt mollitia iure eos iste magnam pariatur libero dolores? Nam, unde!
-              <div className="bg-lime-500 h-2/5">
-                <Image src={'/images/maps.jpg'} alt="maps" width={450} height={450} className="w-full h-full" />
+              <div className="w-full h-[450px]">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic soluta, praesentium neque minima quaerat ab ratione eum? Rem fugiat aspernatur qui, maiores alias omnis repellendus laboriosam consequuntur ipsum, incidunt voluptatibus.
+                Praesentium optio dolore ipsa, voluptatum error iure adipisci incidunt quo alias voluptates, dolores odit corrupti nesciunt provident, aperiam sapiente. Nesciunt mollitia iure eos iste magnam pariatur libero dolores? Nam, unde!
+                <div className="bg-lime-500 h-2/5">
+                  <Image src={'/images/maps.jpg'} alt="maps" width={700} height={700} className="w-full h-full" />
+                </div>
               </div>
             </div>
           </div>
