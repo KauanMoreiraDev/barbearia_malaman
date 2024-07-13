@@ -11,7 +11,7 @@ export default function Home() {
         <div className="bg-black">
           <div className="inicio/apresentação mx-auto max-w-screen-lg">
             <div className="mx-auto">
-              <Image src={'/images/banner final.jpg'} alt="banner" width={2000} height={2000} className="w-full h-full" />
+              <Image src={'/images/banner final.jpg'} alt="banner inicio" width={2000} height={2000} className="w-full h-full" />
             </div>
           </div>
         </div>
@@ -21,10 +21,15 @@ export default function Home() {
               <div className="w-2/5 h-5/6">
                 <Image src={'/images/detalhe.jpg'} alt="imagem" width={200} height={400} className="w-full h-full pr-4" />
               </div>
-              <div className="w-3/5 h-full bg-red-200">
-                <div className="flex flex-col h-full">
-                  <div className="font-semibold text-center text-3xl">Somos referência na Cidade</div>
-                  <Serviços />
+              <div className="w-3/5 h-1/2 bg-red-200">
+                <div className="sm:w-3/5 sm:h-full">
+                  <div className="flex flex-col h-full p-2">
+                    <div className="font-semibold text-center text-xl">
+                      <div className="sm:text-3xl">Somos referência na Cidade
+                      </div>
+                    </div>
+                    <Serviços />
+                  </div>
                 </div>
               </div>
             </div>
@@ -53,7 +58,9 @@ export default function Home() {
         </div>
         <div className="galeria bg-yellow-100">
           <div className="mx-auto max-w-screen-lg h-screen">
-            <Galeria />
+            <div className="w-full h-full">
+              <Galeria />
+            </div>
           </div>
         </div>
         <div className="sobre nós bg-yellow-100">

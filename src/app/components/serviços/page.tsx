@@ -26,13 +26,15 @@ export default function Serviços() {
       ]
 
     return (
-        <div className="grid grid-cols-2 gap-4">
-            {icons_barber.map((icofn, index) => (
-                <div key={index}>
-                <Image key={index} src={icofn.local} alt={icofn.nome} width={70} height={70} />
-                {icofn.descrição}
-                </div>
-            ))}
+        <div className="grid grid-cols-1 gap-4">
+          <div className="sm:grid sm:grid-cols-2 sm:gap-4">
+              {icons_barber.map((icofn, index) => (
+                  <div key={index}>
+                  <Image key={index} src={icofn.local} alt={icofn.nome} width={70} height={70} />
+                  {icofn.descrição}
+                  </div>
+              ))}
+          </div>
         </div>
     )
 }
