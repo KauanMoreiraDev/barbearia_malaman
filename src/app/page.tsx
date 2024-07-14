@@ -1,3 +1,5 @@
+"use client";
+
 import Image from "next/image";
 import Galeria from "./components/galeria de fotos/page";
 import Serviços from "./components/serviços/page";
@@ -23,7 +25,7 @@ export default function Home() {
                   <Image src={'/images/detalhe.jpg'} alt="imagem" width={200} height={400} className="w-full h-full pr-4" />
                 </div>
               </div>
-              <div className="w-3/5 h-1/2 p-4 bg-red-200">
+              <div className="w-3/5 h-full p-4 bg-red-200">
                 <div className="sm:w-3/5 sm:h-full">
                   <div className="flex flex-col h-full">
                     <div className="font-semibold text-center text-xl">
