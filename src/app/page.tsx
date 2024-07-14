@@ -15,15 +15,17 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className="serviços bg-yellow-100">
+        <div className="arrumar grid serviços bg-yellow-100">
           <div className="mx-auto max-w-screen-lg h-full bg-yellow-100">
-            <div className="flex items-end">
-              <div className="w-2/5 h-5/6">
-                <Image src={'/images/detalhe.jpg'} alt="imagem" width={200} height={400} className="w-full h-full pr-4" />
+            <div className="flex items-end justify-center">
+              <div className="hidden sm:block">
+                <div className="w-5/6 h-5/6">
+                  <Image src={'/images/detalhe.jpg'} alt="imagem" width={200} height={400} className="w-full h-full pr-4" />
+                </div>
               </div>
-              <div className="w-3/5 h-1/2 bg-red-200">
+              <div className="w-3/5 h-1/2 p-4 bg-red-200">
                 <div className="sm:w-3/5 sm:h-full">
-                  <div className="flex flex-col h-full p-2">
+                  <div className="flex flex-col h-full">
                     <div className="font-semibold text-center text-xl">
                       <div className="sm:text-3xl">Somos referência na Cidade
                       </div>
@@ -36,21 +38,25 @@ export default function Home() {
           </div>
         </div>
         <div className="tabela de preços bg-[url('/images/barber-tool.jpg')] bg-cover bg-no-repeat bg-center">
-        <div className="mx-auto max-w-screen-lg h-full">
-          <div className="p-4 flex justify-center items-center">
-            <div className="">
-              <div className="w-full h-full">
-                <Image src={'/images/barber-pole.png'} alt="pole-barber" width={1000} height={1000} className="w-full h-full -rotate-12" />
+          <div className="mx-auto max-w-screen-lg h-full">
+            <div className="p-4 flex justify-center items-center">
+              <div className="">
+                <div className="w-5/6 h-full">
+                  <div className="sm:w-full sm:h-full">
+                    <Image src={'/images/barber-pole.png'} alt="pole-barber" width={1000} height={1000} className="w-full h-full -rotate-12" />
+                  </div>
+                </div>
               </div>
-            </div>
-            <div className="w-full h-full ">
-              <div className="flex justify-center">
-                <Prices />
+              <div className="w-full h-full ">
+                <div className="flex justify-center">
+                  <Prices />
+                </div>
               </div>
-            </div>
-            <div className="">
-              <div className="w-full h-full">
-                <Image src={'/images/barber-pole.png'} alt="pole-barber" width={1000} height={1000} className="w-full h-full rotate-12" />
+              <div className="">
+                <div className="w-5/6 h-full">
+                  <div className="sm:w-full sm:h-full">
+                    <Image src={'/images/barber-pole.png'} alt="pole-barber" width={1000} height={1000} className="w-full h-full rotate-12" />
+                  </div>
                 </div>
               </div>
             </div>
