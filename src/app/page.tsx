@@ -25,11 +25,12 @@ export default function Home() {
                   <Image src={'/images/detalhe.jpg'} alt="imagem" width={200} height={400} className="w-full h-full pr-4" />
                 </div>
               </div>
-              <div className="w-3/5 h-full p-4 bg-red-200">
+              <div className="w-3/5 h-full p-4">
                 <div className="sm:w-3/5 sm:h-full">
                   <div className="flex flex-col h-full">
-                    <div className="font-semibold text-center text-xl">
-                      <div className="sm:text-3xl">Somos referência na Cidade
+                    <div className="font-semibold text-center text-xl mb-10">
+                      <div className="sm:text-3xl">
+                        Somos referência na Cidade
                       </div>
                     </div>
                     <Serviços />
@@ -65,21 +66,21 @@ export default function Home() {
           </div>
         </div>
         <div className="galeria bg-yellow-100">
-          <div className="mx-auto max-w-screen-lg h-screen">
-            <div className="w-full h-full">
+          <div className="mx-auto max-w-screen-lg min-h-full">
+            <div className="w-full min-h-full">
               <Galeria />
             </div>
           </div>
         </div>
         <div className="sobre nós bg-yellow-100">
           <div className="mx-auto max-w-screen-lg h-full">
-            <div className="flex justify-center">
+            <div className="sm:flex sm:justify-center">
               <div className="w-full h-full">
-                <div className="flex justify-start">
+                <div className="sm:flex sm:justify-start">
                   <Image src={'/images/logo.png'} alt="logo" width={1000} height={1000} className="w-full h-full" />
                 </div>
               </div>
-              <div className="w-full h-[450px]">
+              <div className="w-full min-h-full p-4">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic soluta, praesentium neque minima quaerat ab ratione eum? Rem fugiat aspernatur qui, maiores alias omnis repellendus laboriosam consequuntur ipsum, incidunt voluptatibus.
                 Praesentium optio dolore ipsa, voluptatum error iure adipisci incidunt quo alias voluptates, dolores odit corrupti nesciunt provident, aperiam sapiente. Nesciunt mollitia iure eos iste magnam pariatur libero dolores? Nam, unde!
                 <div className="bg-lime-500 h-2/5">
@@ -88,6 +89,7 @@ export default function Home() {
               </div>
             </div>
           </div>
+
         </div>
       </div>
     </main >
