@@ -1,55 +1,77 @@
+"use client";
+
 import Image from "next/image";
-import Link from "next/link";
-import Mheader from "./components/header/page";
+import Galeria from "./components/galeria de fotos/page";
+import Serviços from "./components/serviços/page";
+import Prices from "./components/tabela preços/page";
 
 export default function Home() {
 
-  const icons_barber = [
-    {
-      nome: 'Cabelo e barba',
-      descrição: 'Corte de cabelo com barba',
-      local: '/images/Cabelo-Barba.png',
-    },
-    {
-      nome: 'Química capilar',
-      descrição: 'Descolorir, tintura, selagem',
-      local: '/images/Quimica.png',
-    },
-    {
-      nome: 'Dia do noivo',
-      descrição: 'Pacote completo com cabelo, barba e sombrancelho pro abençoado',
-      local: '/images/Dia-do-noivo.png',
-    },
-    {
-      nome: 'Sinuca',
-      descrição: 'Temos sinuca para entreenimento',
-      local: '/images/Sinuca.png',
-    },
-  ]
-
   return (
-    <main className="w-screen h-screen relative">
-      <div className="w-full h-full bg-[url('/images/banner1.jpg')] bg-no-repeat bg-right">
-        <Mheader />
-      </div>
-      <div>
-        <div className="w-2/5 h-screen bg-black flex justify-center items-center rotate-12 absolute top-14 -left-14">
-          <div className="-rotate-[18deg]">
-            <Image src={'/images/logo2.png'} alt="logo" width={270} height={270} className="rounded-full" />
+    <main className="w-screen h-full bg-slate-200">
+      <div className="font-Inter font-light italic">
+        <div className="bg-black">
+          <div className="inicio/apresentação mx-auto max-w-screen-lg">
+            <div className="mx-auto">
+              <Image src={'/images/banner final.jpg'} alt="banner inicio" width={2000} height={2000} className="w-full h-full" />
+            </div>
           </div>
         </div>
-      </div>
-      {/* <div className="bg-lime-400 h-4/5" /> */}
-      <div className="z-20 relative bg-white">
-        <div className="flex items-end justify-center z-20 pt-2 pb-2">
-          <div className="grid grid-cols-2 w-1/2">
-            {icons_barber.map((icofn, index) => (
-              <div key={index}>
-                <Image src={icofn.local} alt={icofn.nome} width={100} height={100} />
+        <div className="serviços bg-yellow-100">
+          <div className="mx-auto max-w-screen-lg h-full bg-yellow-100">
+            <div className="flex items-end justify-center">
+              <div className="hidden sm:block">
+                <div className="w-5/6 h-5/6">
+                  <Image src={'/images/detalhe.jpg'} alt="imagem" width={200} height={400} className="w-full h-full pr-4" />
+                </div>
               </div>
-            ))}
-          </div >
-          <div className="bg-lime-400 w-72 h-[32rem]" />
+              <div className="w-3/5 h-full p-4">
+                <div className="sm:w-3/5 sm:h-full">
+                  <div className="flex flex-col h-full">
+                    <div className="font-semibold text-center text-xl mb-10">
+                      <div className="sm:text-3xl">
+                        Somos referência na Cidade
+                      </div>
+                    </div>
+                    <Serviços />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="acertar alinhamento tabela de preços bg-[url('/images/barber-tool.jpg')] bg-cover bg-no-repeat bg-center">
+          <div className="mx-auto max-w-screen-lg h-screen">
+            <div className="flex items-center">
+              <Prices />
+            </div>
+          </div>
+        </div>
+        <div className="galeria bg-yellow-100">
+          <div className="mx-auto max-w-screen-lg min-h-full">
+            <div className="w-full min-h-full">
+              <Galeria />
+            </div>
+          </div>
+        </div>
+        <div className="sobre nós bg-yellow-100">
+          <div className="mx-auto max-w-screen-lg h-full">
+            <div className="sm:flex sm:justify-center">
+              <div className="w-full h-full">
+                <div className="sm:flex sm:justify-start">
+                  <Image src={'/images/logo.png'} alt="logo" width={1000} height={1000} className="w-full h-full" />
+                </div>
+              </div>
+              <div className="w-full min-h-full p-4">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic soluta, praesentium neque minima quaerat ab ratione eum? Rem fugiat aspernatur qui, maiores alias omnis repellendus laboriosam consequuntur ipsum, incidunt voluptatibus.
+                Praesentium optio dolore ipsa, voluptatum error iure adipisci incidunt quo alias voluptates, dolores odit corrupti nesciunt provident, aperiam sapiente. Nesciunt mollitia iure eos iste magnam pariatur libero dolores? Nam, unde!
+                <div className="bg-lime-500 h-2/5">
+                  <Image src={'/images/maps.jpg'} alt="maps" width={700} height={700} className="w-full h-full" />
+                </div>
+              </div>
+            </div>
+          </div>
+
         </div>
       </div>
     </main >
