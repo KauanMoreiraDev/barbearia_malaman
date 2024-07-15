@@ -12,6 +12,20 @@ export default function Prices() {
         <div className="w-full h-full relative">
             <div className="bg-black blur-[2px] bg-opacity-50 absolute inset-0 rounded-lg">
             </div>
+            <div className="block sm:hidden">
+                <div className="z-10 relative flex justify-center p-1">
+                    <div className="w-4/5 text-left text-white">
+                        {prices.map((price, index) => (
+                            <div key={index} className="flex items-center flex-col py-1 border-b">
+                                <div>{price.service}</div>
+                                <div>{price.price}</div>
+                            </div>
+                        ))}
+                    </div>
+                </div>
+            </div>
+
+            <div className="hidden sm:block">
             <div className="z-10 relative flex justify-center p-1">
                 <div className="w-4/5 text-left text-white">
                     {prices.map((price, index) => (
@@ -21,6 +35,7 @@ export default function Prices() {
                         </div>
                     ))}
                 </div>
+            </div>
             </div>
         </div>
     );

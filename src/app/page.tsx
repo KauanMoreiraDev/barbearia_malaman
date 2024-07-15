@@ -43,7 +43,7 @@ export default function Home() {
           <div className="mx-auto max-w-screen-lg h-full">
             <div className="p-4 flex justify-center items-center">
               <div className="">
-                <div className="w-5/6 h-full">
+                <div className="hidden">
                   <div className="sm:w-full sm:h-full">
                     <Image src={'/images/barber-pole.png'} alt="pole-barber" width={1000} height={1000} className="w-full h-full -rotate-12" />
                   </div>
@@ -55,7 +55,7 @@ export default function Home() {
                 </div>
               </div>
               <div className="">
-                <div className="w-5/6 h-full">
+                <div className="hidden">
                   <div className="sm:w-full sm:h-full">
                     <Image src={'/images/barber-pole.png'} alt="pole-barber" width={1000} height={1000} className="w-full h-full rotate-12" />
                   </div>
