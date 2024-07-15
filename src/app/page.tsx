@@ -17,7 +17,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className="arrumar grid serviços bg-yellow-100">
+        <div className="serviços bg-yellow-100">
           <div className="mx-auto max-w-screen-lg h-full bg-yellow-100">
             <div className="flex items-end justify-center">
               <div className="hidden sm:block">
@@ -40,28 +40,10 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className="tabela de preços bg-[url('/images/barber-tool.jpg')] bg-cover bg-no-repeat bg-center">
-          <div className="mx-auto max-w-screen-lg h-full">
-            <div className="p-4 flex justify-center items-center">
-              <div className="">
-                <div className="hidden">
-                  <div className="sm:w-full sm:h-full">
-                    <Image src={'/images/barber-pole.png'} alt="pole-barber" width={1000} height={1000} className="w-full h-full -rotate-12" />
-                  </div>
-                </div>
-              </div>
-              <div className="w-full h-full ">
-                <div className="flex justify-center">
-                  <Prices />
-                </div>
-              </div>
-              <div className="">
-                <div className="hidden">
-                  <div className="sm:w-full sm:h-full">
-                    <Image src={'/images/barber-pole.png'} alt="pole-barber" width={1000} height={1000} className="w-full h-full rotate-12" />
-                  </div>
-                </div>
-              </div>
+        <div className="acertar alinhamento tabela de preços bg-[url('/images/barber-tool.jpg')] bg-cover bg-no-repeat bg-center">
+          <div className="mx-auto max-w-screen-lg h-screen">
+            <div className="flex items-center">
+              <Prices />
             </div>
           </div>
         </div>

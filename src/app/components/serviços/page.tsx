@@ -32,6 +32,7 @@ export default function Serviços() {
           <div key={index} className="">
             <div className="text-center mb-4">
               <Image key={index} src={icofn.local} alt={icofn.nome} width={70} height={70} className="flex mx-auto mb-2"/>
+                <div className="font-bold mb-1">{icofn.nome}</div>
               {icofn.descrição}
             </div>
           </div>
