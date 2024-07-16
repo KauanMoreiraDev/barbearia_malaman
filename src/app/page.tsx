@@ -8,7 +8,7 @@ import Prices from "./components/tabela preços/page";
 export default function Home() {
 
   return (
-    <main className="w-screen h-full bg-slate-200">
+    <main className="w-screen h-full">
       <div className="font-Inter font-light italic">
         <div className="bg-black">
           <div className="inicio/apresentação mx-auto max-w-screen-lg">
@@ -17,9 +17,10 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className="serviços bg-yellow-100">
-          <div className="mx-auto max-w-screen-lg h-full bg-yellow-100">
-            <div className="flex items-end justify-center">
+        <div className="serviços bg-yellow-100 relative">
+          <div className="bg-[url('/images/bg-total.png')] bg-cover opacity-15 absolute inset-0 z-0"></div>
+          <div className="mx-auto max-w-screen-lg h-full">
+            <div className="flex items-end justify-center relative ">
               <div className="hidden sm:block">
                 <div className="w-5/6 h-5/6">
                   <Image src={'/images/detalhe.jpg'} alt="imagem" width={200} height={400} className="w-full h-full pr-4" />
@@ -38,24 +39,27 @@ export default function Home() {
                 </div>
               </div>
             </div>
+          
           </div>
         </div>
         <div className="acertar alinhamento tabela de preços bg-[url('/images/barber-tool.jpg')] bg-cover bg-no-repeat bg-center">
-          <div className="mx-auto max-w-screen-lg h-screen">
-            <div className="flex items-center">
+          <div className="mx-auto max-w-screen-lg h-screen flex items-center justify-center">
+            <div className="w-full">
               <Prices />
             </div>
           </div>
         </div>
-        <div className="galeria bg-yellow-100">
+        <div className="galeria bg-yellow-100 relative">
+        <div className="bg-[url('/images/bg-total.png')] bg-cover opacity-15 absolute inset-0 z-0"></div>
           <div className="mx-auto max-w-screen-lg min-h-full">
-            <div className="w-full min-h-full">
+            <div className="w-full min-h-full relative">
               <Galeria />
             </div>
           </div>
         </div>
-        <div className="sobre nós bg-yellow-100">
-          <div className="mx-auto max-w-screen-lg h-full">
+        <div className="sobre nós bg-yellow-100 relative">
+        <div className="bg-[url('/images/bg-total.png')] bg-cover opacity-15 absolute inset-0 z-0"></div>
+          <div className="mx-auto max-w-screen-lg h-full relative">
             <div className="sm:flex sm:justify-center">
               <div className="w-full h-full">
                 <div className="sm:flex sm:justify-start">
