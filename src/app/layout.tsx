@@ -17,7 +17,13 @@ export default function RootLayout({
     <html lang="pt-br">
       <body>
         <Mheader />
-        {children}
+        <div className="bg-yellow-100 relative">
+          <div className="bg-[url('/images/bg-total.png')] absolute inset-0 opacity-15">
+          </div>
+            <div className="relative">
+              {children}
+            </div>
+        </div>
         <Footer />
       </body>
     </html>

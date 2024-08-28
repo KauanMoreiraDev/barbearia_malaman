@@ -9,28 +9,13 @@ export default function Mheader() {
     const [open, setOpen] = useState(true)
 
     return (
-        <header className="w-screen h-32 bg-white">
+        <header className="w-screen h-full bg-white sticky top-0 z-50">
             <div className="mx-auto max-w-screen-lg">
+
                 <div className="flex justify-between items-center">
-                    <Link href="#"><Image src={'/images/logo2.png'} alt="logo" width={120} height={120} className="rounded-full" /></Link>
-                    <div className="block sm:hidden relative z-50">
-                        <button onClick={() => setOpen(!open)} className="w-full h-full">
-                            {open ? <Image src={'/images/cardapio.png'} alt="abrir menu" width={30} height={30} className="pr-5" /> : <div className="flex flex-col items-end">
-                                <Image src={'/images/x.png'} alt="fecha menu" width={30} height={30} className="pr-5" />
-                                <div className=" w-screen h-screen">
-                                    <div className="bg-gradient-to-b from-slate-600 to-slate-900 opacity-70 absolute inset-0">
-                                    </div>
-                                    <div className="text-black font-bold text-2xl">
-                                        <nav className="flex flex-col justify-center relative z-50 space-y-4">
-                                            <Link href="#" className="mx-2 hover:text-yellow-400 sm:mx-8">Serviços</Link>
-                                            <Link href="#" className="mx-2 hover:text-yellow-400 sm:mx-8">Galeria</Link>
-                                            <Link href="#" className="mx-2 hover:text-yellow-400 sm:mx-8">Institucional</Link>
-                                        </nav>
-                                    </div>
-                                </div>
-                            </div>}
-                        </button>
-                    </div>
+                    <Link href="#"><Image src={'/images/mr roots.png'} alt="logo" width={300} height={300} className="rounded-full w-1/4 h-1/4" /></Link>
+
+
                     <div className="hidden sm:block">
                         <div className="text-xl font-medium text-black">
                             <nav className="">

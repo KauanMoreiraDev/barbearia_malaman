@@ -21,7 +21,7 @@ export default function Galeria() {
     ]
 
     return (
-        <div className="grid grid-cols-1 gap-3 place-items-center w-full h-full bg-yellow-100 p-4">
+        <div className="grid grid-cols-1 gap-3 place-items-center w-full h-full p-4">
             <div className="sm:grid sm:grid-cols-3 sm:gap-6 ">
             {fotos.map((ftfn, index) => (
                 <div key={index} className="w-full h-auto">
